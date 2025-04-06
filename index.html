@@ -1,18 +1,108 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Untitled Page</title>
-<meta name="generator" content="WYSIWYG Web Builder 16 - https://www.wysiwygwebbuilder.com">
-<link href="Untitled1.css" rel="stylesheet">
-<link href="index.css" rel="stylesheet">
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>IronCore Gym</title>
-  </head>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://images.unsplash.com/photo-1583454110551-21e6c3c62af3') no-repeat center center/cover;
+      color: white;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.7);
+      min-height: 100vh;
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #ccc;
+      max-width: 600px;
+    }
+
+    .btn {
+      background: #e91e63;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.85);
+      margin: 0;
+    }
+
+    section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #e91e63;
+    }
+
+    .services, .trainers {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #111;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    }
+
+    .card h3 {
+      margin-top: 10px;
+      color: #fff;
+    }
+
+    .card p {
+      font-size: 0.9em;
+      color: #aaa;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #000;
+      font-size: 0.9em;
+      color: #999;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2em; }
+      .services, .trainers { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
 <body>
   <div class="overlay">
     <header>
@@ -67,12 +157,5 @@
       &copy; 2025 IronCore Gym. All rights reserved.
     </footer>
   </div>
-</body>
-</html>
-
-</head>
-<body>
-
-
 </body>
 </html>
